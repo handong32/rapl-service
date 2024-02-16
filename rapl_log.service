@@ -1,0 +1,9 @@
+[Unit]
+Description=Service to store rapl energy log
+
+[Service]
+WorkingDirectory=tmpdir
+ExecStart=/usr/bin/python rapl_log.py
+
+[Install]
+WantedBy=multi-user.target
