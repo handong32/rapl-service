@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo dnf -y install msr-tools
+#sudo dnf -y install msr-tools
 
 currdir=$(pwd)
 
