@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #sudo dnf -y install msr-tools
+sudo modprobe msr
 
 currdir=$(pwd)
 
@@ -25,5 +26,5 @@ sudo chmod g+rw /dev/cpu/*/msr
 sudo usermod -aG msr $(whoami)
 echo "⚠️ ⚠️ ⚠️  NOTE: Please exit completely and re-login to this node for msr group changes to take effect ⚠️ ⚠️ ⚠️"
 
-sudo newgrp - msr
+newgrp - msr
 
