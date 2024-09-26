@@ -25,6 +25,3 @@ sudo ls -l /dev/cpu/*/msr
 sudo chmod g+rw /dev/cpu/*/msr
 sudo usermod -aG msr $(whoami)
 echo "⚠️ ⚠️ ⚠️  NOTE: Please exit completely and re-login to this node for msr group changes to take effect ⚠️ ⚠️ ⚠️"
-
-newgrp - msr
-
